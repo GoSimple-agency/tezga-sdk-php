@@ -1,0 +1,36 @@
+{
+    "name": "gosimple/tezga",
+    "description": "Official PHP SDK for the Tezga Fiscal API: issue and fiscalize legal receipts in Serbia (eKasa / SUF) over a single REST API, no L-PFR hardware. A GoSimple product.",
+    "type": "library",
+    "keywords": [
+        "tezga",
+        "fiscalization",
+        "fiscal-receipt",
+        "serbia",
+        "ekasa",
+        "suf",
+        "v-pfr",
+        "e-invoice",
+        "sef",
+        "pos",
+        "sdk",
+        "gosimple"
+    ],
+    "homepage": "https://tezgafiskal.com/en/fiscalization-api",
+    "license": "proprietary",
+    "authors": [
+        { "name": "GoSimple", "homepage": "https://gosimple.space" }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": { "GoSimple\\Tezga\\": "src/" }
+    },
+    "support": {
+        "issues": "https://github.com/GoSimple-agency/tezga-sdk-php/issues",
+        "source": "https://github.com/GoSimple-agency/tezga-sdk-php"
+    }
+}
