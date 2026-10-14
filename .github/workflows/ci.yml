@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Test (PHP ${{ matrix.php }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        php: ['8.1', '8.2', '8.3', '8.4', '8.5']
+    steps:
+      - uses: actions/checkout@v7
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: curl, json
+          coverage: none
+      - run: composer validate --strict
+      - name: Lint
+        run: for f in src/*.php test/*.php; do php -l "$f"; done
+      # Any notice or deprecation fails the build (curl_close() on PHP 8.5 slipped through once).
+      - name: Tests
+        run: |
+          for t in test/*_test.php; do
+            php -d error_reporting=-1 -d display_errors=stderr "$t" 2>> php-errors.log
+          done
+          if [ -s php-errors.log ]; then echo "PHP emitted notices or deprecations:"; cat php-errors.log; exit 1; fi

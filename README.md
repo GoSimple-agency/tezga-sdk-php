@@ -1,11 +1,12 @@
 <p align="center">
-  <a href="https://tezgafiskal.com"><picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/GoSimple-agency/.github/main/profile/assets/tezga-lockup-dark.svg">
-    <img alt="Tezga" src="https://raw.githubusercontent.com/GoSimple-agency/.github/main/profile/assets/tezga-lockup.svg" width="240">
-  </picture></a>
+  <a href="https://tezgafiskal.com"><img alt="Tezga eKasa" src="https://raw.githubusercontent.com/GoSimple-agency/.github/main/profile/assets/tezga-lockup-dark.svg" width="280"></a>
 </p>
 
 # Tezga Fiscal API — PHP SDK
+
+[![CI](https://github.com/GoSimple-agency/tezga-sdk-php/actions/workflows/ci.yml/badge.svg)](https://github.com/GoSimple-agency/tezga-sdk-php/actions/workflows/ci.yml)
+[![PHP](https://img.shields.io/badge/php-%E2%89%A58.1-777BB4)](https://www.php.net)
+[![Docs](https://img.shields.io/badge/docs-tezgafiskal.com-00313e)](https://tezgafiskal.com/en/fiscalization-api)
 
 Issue and fiscalize **legal fiscal receipts in Serbia (eKasa / SUF)** from PHP, with one
 `composer require` and an API key. No L-PFR hardware, no signing code on your side: you
