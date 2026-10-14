@@ -1,3 +1,10 @@
+<p align="center">
+  <a href="https://tezgafiskal.com"><picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/GoSimple-agency/.github/main/profile/assets/tezga-lockup-dark.svg">
+    <img alt="Tezga" src="https://raw.githubusercontent.com/GoSimple-agency/.github/main/profile/assets/tezga-lockup.svg" width="240">
+  </picture></a>
+</p>
+
 # Tezga Fiscal API — PHP SDK
 
 Issue and fiscalize **legal fiscal receipts in Serbia (eKasa / SUF)** from PHP, with one
