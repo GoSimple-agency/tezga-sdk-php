@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://tezgafiskal.com"><img alt="Tezga eKasa" src="https://raw.githubusercontent.com/GoSimple-agency/.github/main/profile/assets/tezga-lockup-dark.svg" width="280"></a>
+  <a href="https://tezgafiskal.com"><img alt="Tezga" src="https://raw.githubusercontent.com/GoSimple-agency/.github/main/profile/assets/tezga-znak.svg" width="72"></a>
 </p>
 
 # Tezga Fiscal API — PHP SDK
